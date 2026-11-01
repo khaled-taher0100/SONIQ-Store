@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="icon" href="imgs/hero-desk9.jpg">
+    <title>SONIQ || Cart</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+</head>
+<body>
+    
+    <header class="fixed z-1000 w-full bg-gradient-to-b from-cyan-400/85 to-black/85 text-white h-20 max-[640px]:h-30 
+     sm:bg-gradient-to-b sm:from-black/85 sm:to-cyan-300/85">
+
+        <div class="contaiiner py-2 h-full w-[90%] m-auto flex justify-between items-center max-[640px]:items-start  relative
+         sm:w-[80%] ">
+            <a href="index.html" class="title-name text-[aqua] text-xl font-bold font-serif tracking-wide
+             sm:text-3xl">
+                <span class="text-5xl text-[black] text-shadow-lg text-shadow-[yellow] sm:text-6xl animate-pulse">S</span>ONIQ Store
+            </a>
+
+            <nav>
+                <ul id="links" class="font-bold flex flex-col gap-4 
+                 sm:text-xl sm:flex-row">
+                    <li>
+                        <a href="Login.html" class=" p-[5px] text-sm sm:text-base sm:p-2 bg-black text-[aqua] rounded-lg hover:bg-black/60">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="register.html" class=" p-[5px] text-sm sm:text-base sm:p-2 bg-[aqua] text-black rounded-lg hover:bg-[aqua]/70">Sign Up</a>
+                    </li>
+                </ul>
+
+                <ul id="userInfo" class="hidden  w-20 sm:w-full sm:gap-5">
+                    <li class=" font-mono font-bold sm:text-xl ml-auto max-[640px]:mt-3"><a href="#" id="user" class="font-serif text-[aqua] text-lg sm:text-2xl font-bold capitalize inline-block first-letter:text-2xl first-letter:text-black first-letter:text-shadow-lg first-letter:text-shadow-[yellow] sm:first-letter:text-3xl"></a></li>
+                    <div class="fix max-[640px]:absolute max-[640px]:flex max-[640px]:justify-between max-[640px]:flex-row-reverse max-[640px]:w-full max-[640px]:left-0 max-[640px]:top-20 max-[640px]:px-7  min-[640px]:flex gap-7 place-self-center ">
+                        <li class="cart cursor-pointer relative sm:mx-4 place-self-center">
+                            <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                            <span class="badge hidden bg-red-500 w-5 h-5 text-sm font-medium absolute text-center rounded-3xl -top-3 -right-2"></span>
+                            <div class="viewProduct scroll-my-96 cursor-default hidden min-w-max absolute bg-black/70 text-[aqua] mt-[13.5px] text-center -right-14 p-3 border-2 rounded-xl min-[640px]:top-10 min-[640px]:-left-19 ">
+                                <div class="font-bold mb-5 tracking-wide leading-9"></div>
+                                <a href="cartproduct.html" class="bg-red-600/70 p-1 px-2 font-medium rounded-lg">View Products Cart</a>
+                            </div>
+                        </li>
+                        <li><a href="#" id="logOut" class=" font-bold bg-black p-2 px-3 text-[aqua] rounded-xl hover:bg-black/50 outline-2">LogOut</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-b from-cyan-700 to-black h-full
+     sm:bg-gradient-to-b sm:from-black sm:to-cyan-700">
+
+        <h2 class="text-2xl font-bold place-self-center fixed top-33 sm:top-25 z-50 bg-black/75 text-[aqua] w-fit p-1 px-3 border-b-3 rounded-xl tracking-wider leading-10">Your Choosen Products</h2>
+        <div class="containerProduct py-65">
+            <div class="ChoosenproductsContainer w-[90%] m-auto
+                        max-[599px]:grid grid-cols-1
+                        min-[600px]:max-[849px]:grid min-[600px]:max-[849px]:grid-cols-2 min-[600px]:max-[849px]:gap-x-5
+                        min-[850px]:max-[1080px]:grid min-[850px]:max-[1080px]:grid-cols-3 min-[850px]:max-[1080px]:gap-x-5
+                        min-[1081px]:grid min-[1081px]:grid-cols-4 min-[1081px]:gap-x-5">
+
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="JS/user.js"></script>
+    <script src="JS/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+
+input[type = "email"]:invalid{
+    outline: 2px solid red;
+    text-transform: capitalize;
+}

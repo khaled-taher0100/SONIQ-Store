@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="icon" href="imgs/hero-desk9.jpg">
+    <title>SONIQ || register</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+</head>
+<body>
+    
+    <header class="fixed z-1000 w-full bg-gradient-to-b from-cyan-400/85 to-black/85 text-white h-20 
+     sm:bg-gradient-to-b sm:from-black/85 sm:to-cyan-300/85">
+
+        <div class="contaiiner h-full w-[90%] m-auto flex justify-between items-center relative
+         sm:w-[80%] ">
+            <a href="index.html" class="title-name text-[aqua] text-xl font-bold font-serif tracking-wide
+             sm:text-3xl">
+                <span class="text-5xl text-[darkblue] text-shadow-lg text-shadow-[deeppink] sm:text-6xl animate-pulse">S</span>ONIQ Store
+            </a>
+
+            <nav>
+                <ul id="links" class="font-bold flex flex-col gap-4
+                 sm:text-xl sm:gap-3 sm:flex-row sm:font-bold">
+                    <li>
+                        <a href="Login.html" class=" p-[5px] text-sm sm:text-base sm:p-2 bg-black text-[aqua] rounded-lg hover:bg-black/60">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="register.html" class=" p-[5px] text-sm sm:text-base sm:p-2 bg-[aqua] text-black rounded-lg hover:bg-[aqua]/70">Sign Up</a>
+                    </li>
+                </ul>
+
+                <ul id="userInfo" class="hidden">
+                    <li><a href="#" id="user"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-form bg-gradient-to-b from-cyan-700 to-black h-screen grid place-items-center
+     sm:bg-gradient-to-b sm:from-black sm:to-cyan-700">
+        <form class="bg-gray-800 w-[80%] flex flex-col gap-4  py-4 px-5 rounded-2xl border border-3 border-cyan-300
+         sm:w-[50%] ">
+            <h1 class="text-xl text-cyan-300 font-bold mx-auto mb-2
+             sm:text-4xl sm:mb-5">
+                <span class="text-4xl text-[darkblue] text-shadow-lg text-shadow-[deeppink] sm:text-5xl">R</span>egister User
+            </h1>
+            <input id="username" type="text" placeholder="Username" class=" p-2 bg-black text-cyan-300 rounded-lg focus:outline focus:outline-2 focus:outline-cyan-300 placeholder:text-cyan-300 caret-white">
+            <div class="box relative">
+                <input id="password" type="password" placeholder="Password" class="w-full p-2 bg-black text-cyan-300 rounded-lg focus:outline focus:outline-2 focus:outline-cyan-300 placeholder:text-cyan-300">
+                <input type="checkbox" id="show" class="peer hidden absolute w-5 h-5 right-2 top-2">
+                <label for="show" class="fa-regular fa-eye  hidden! peer-checked:block!  eye1  absolute w-5 h-5 right-5 top-[11px] text-[aqua] text-xl cursor-pointer "></label>
+                <label for="show" class="fa-regular fa-eye-slash block!  peer-checked:hidden!  eye2  absolute w-5 h-5 right-5 top-[11px] text-white text-xl cursor-pointer"></label>
+            </div>
+            <input id="email" type="email" placeholder="Email" class=" p-2 bg-black text-cyan-300 rounded-lg focus:outline focus:outline-2 focus:outline-cyan-300 placeholder:text-cyan-300 caret-orange-400">
+            <input id="sign-up" type="submit" value="Sign In" class=" p-2 w-[70%] m-auto bg-cyan-400 text-base font-bold rounded-2xl mt-6 hover:bg-cyan-400/60
+             sm:p-2 sm:text-lg sm:w-[100%]">
+            <a href="Login.html" class="text-cyan-300 m-auto hover:underline">You Already Have an Account?</a>
+        </form>
+    </section>
+    
+    <script src="JS/register.js"></script>
+</body>
+</html>
